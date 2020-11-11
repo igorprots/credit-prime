@@ -1,0 +1,171 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+input {
+    border: 0;
+    border-radius: 5px;
+}
+
+body {
+    background: #f4f7fb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-color;
+}
+
+
+.container {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+
+.title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: 0;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+
+/* FORM */
+form {
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.form__title {
+    margin-bottom: 14px;
+}
+
+.form__phone {
+    max-width: 340px;
+    padding: 21px;
+
+    &::placeholder {
+        font-family: 'FuturaPT-Medium';
+        color: #c8c9d9;
+        line-height: 22px;
+        font-size: 18px;
+
+    }
+}
+
+.form__deal {
+    display: block;
+    margin-top: 15px;
+}
+
+.form__deal-checkbox {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form__deal-label {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        -webkit-appearance: none;
+        background-color: transparent;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+}
+
+
+
+.form__deal-checkbox:checked+.form__deal-label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border: solid #37c47a;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.form__top {
+    background: white;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.25rem;
+}
+
+.btn {
+    background: #31c376;
+    border-color: #31c376;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 1rem 5rem;
+    font-size: 12px;
+    border-radius: 0.25rem;
+}

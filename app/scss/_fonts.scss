@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+    font-family: 'FuturaPT-Medium';
+    src: url('../fonts/futura-pt-medium/FuturaPT-Medium.ttf') format('truetype'),
+        url('../fonts/futura-pt-medium/FuturaPT-Medium.woff') format('woff');
+    src: url('../fonts/futura-pt-medium/futura-pt-medium.eot');
+    src: url('../fonts/futura-pt-medium/futura-pt-medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura-pt-medium/futura-pt-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Book';
+    src: url('../fonts/futura-pt-book/FuturaPT-Book.ttf') format('truetype'),
+        url('../fonts/futura-pt-book/FuturaPT-Book.woff') format('woff');
+    src: url('../fonts/futura-pt-book/futura-pt-book.eot');
+    src: url('../fonts/futura-pt-book/futura-pt-book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura-pt-book/futura-pt-book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
